@@ -1,2 +1,2 @@
 cfg=cfg/train_bird.yml
-python main.py --cfg $cfg
+python2 main.py --cfg $cfg
