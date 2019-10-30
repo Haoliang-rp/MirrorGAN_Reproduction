@@ -187,7 +187,7 @@ def generator_loss(netsD, image_encoder, caption_cnn, caption_rnn, captions, fak
             g_loss = cond_errG
         errG_total += g_loss
 
-        logs += 'g_loss%d: %.2f ' % (i, g_loss.data[0])
+        logs += 'g_loss%d: %.2f ' % (i, g_loss.data)
 
         if i == (numDs - 1):
             fakeimg_feature = caption_cnn(fake_imgs[i])
