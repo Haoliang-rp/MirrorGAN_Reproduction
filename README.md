@@ -18,7 +18,7 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 ```
 - text_encoder.pth
 ```bash
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1vkuHgqZShLJpsLC_Xvuxj6M0WqlM82C7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1vkuHgqZShLJpsLC_Xvuxj6M0WqlM82C7" -O image_encoder.pth && rm -rf /tmp/cookies.txt
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1vkuHgqZShLJpsLC_Xvuxj6M0WqlM82C7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1vkuHgqZShLJpsLC_Xvuxj6M0WqlM82C7" -O text_encoder.pth && rm -rf /tmp/cookies.txt
 ```
 
 After obtaining the pretrained STEM and STREAM modules, we can train the text2image model.
